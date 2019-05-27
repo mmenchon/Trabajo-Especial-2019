@@ -1,6 +1,6 @@
 1. Description
- -Como  municipio quiero saber la recolección total de un barrio para saber cuándo mandar el camión de residuos.
+- Como  municipio quiero saber la recolecciï¿½n total de un barrio para saber cuï¿½ndo mandar el camiï¿½n de residuos.
 1. Acceptance Criteria
- -Tener la habilidad de  obtener información de la recolección de cada barrio  hasta el dia anterior.
- Poder Visualizar estos datos para administrar la logística de los camiones. 
- -Verificar que este logueado como empleado de municipio.  
+- Tener la habilidad de ï¿½obtener informaciï¿½n de la recolecciï¿½n de cada barrio ï¿½hasta el dia anterior.
+- Poder Visualizar estos datos para administrar la logï¿½stica de los camiones. 
+- Verificar que este logueado como empleado de municipio. ï¿½

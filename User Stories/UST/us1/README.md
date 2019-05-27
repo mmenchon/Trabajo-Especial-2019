@@ -1,4 +1,4 @@
-## User Storie 1
+## User Story 1
 1. Description
     - Como  municipio quiero saber la recolección total de un barrio para saber cuándo mandar el camión de residuos.
 2. Acceptance Criteria

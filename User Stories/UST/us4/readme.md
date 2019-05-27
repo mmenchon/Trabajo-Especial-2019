@@ -1,10 +1,9 @@
 ## User Story 4
-	Description
+1. Description
+	- Como usuario quiero tener detalles de mi historial de reciclado, para tener evidencia visual r√°pida del tipo de producto m√°s o menos reciclado.
 
-	-Como usuario quiero tener detalles de mi historial de reciclado, para tener evidencia visual r·pida del tipo de producto m·s o menos reciclado.
-
-	Acceptance Criteria
-	-Verificar si el usuario est· logueado.	
-	-Habilidad de Obtener los detalles de mi historial de reciclado.
-	-Visualizar estos datos por dia, mes, aÒo y el total desde el registro.
+2. Acceptance Criteria
+	- Verificar si el usuario est√° logueado.	
+	- Habilidad de Obtener los detalles de mi historial de reciclado.
+	- Visualizar estos datos por dia, mes, a√±o y el total desde el registro.
 

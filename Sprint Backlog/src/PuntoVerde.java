@@ -10,8 +10,7 @@ public class PuntoVerde {
 	}
 	
 	public Ubicacion getDireccion() {
-		Ubicacion u = new Ubicacion(direccion.getX(), direccion.getY());
-		return u;
+		return direccion;
 	}
 	
 	public String getHorario() {

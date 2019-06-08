@@ -29,5 +29,10 @@ public class Vecino extends Usuario {
     public float gananciaOng() {
         return  this.getIngresogenerado()*2;
     } // las ONG le sacan un 100% a los productos , entonces sacan el doble por cada producto
-
+    
+    public float getPuntaje() {
+    	float punt =0;
+    	for (int i = 0; i < historial.size(); i++) {
+			punt += historial.elementAt(i).getPuntReciclaje();
+		}
 }

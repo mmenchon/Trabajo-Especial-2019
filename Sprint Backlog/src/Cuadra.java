@@ -6,12 +6,11 @@ public class Cuadra extends Zona {
 	
 	@Override
 	public Vector<Vecino> getRanking() {
-		
-		for (int i = 0; i < ciudadanos.size(); i++) {
-			
-		}
+		Vector<Vecino> v = new Vector<Vecino>();
+		ciudadanos.sort();
 	}
 
+	
 	@Override
 	public Vector<Producto> getHistorial() {
 		// TODO Auto-generated method stub

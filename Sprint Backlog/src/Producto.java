@@ -6,21 +6,30 @@ public class Producto {
     private boolean reciclable;
     private float ganancia;
     private float impacto;
+    private float punt_reciclaje;
 
+    public Producto(String n, boolean r, float g, float i, float pr){
+        nombre=n;
+        punt_reciclaje = pr;
+        reciclable=r;
+        ganancia=g;
+        impacto=i;
+    }
+    
+    public void setPuntReciclaje(float pr) {
+		punt_reciclaje = pr;
+	}
+   
+    public float getPuntReciclaje() {
+    	return punt_reciclaje; 
+    }
+    
     public int getCantidad() {
         return cantidad;
     }
 
     public void setCantidad(int cantidad) {
         this.cantidad = cantidad;
-    }
-
-    public Producto (String nombre, int cantidad, boolean reciclable, float ganancia, float impacto){
-        this.nombre=nombre;
-        this.cantidad=cantidad; /*va afuera para mi*/
-        this.reciclable=reciclable;
-        this.ganancia=ganancia;
-        this.impacto=impacto;
     }
 
     public String getNombre() {

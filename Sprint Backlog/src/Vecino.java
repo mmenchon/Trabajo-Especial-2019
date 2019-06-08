@@ -22,11 +22,12 @@ public class Vecino extends Usuario {
         }
         return ingres;
     }
-}
-public ubicacion(Puntoverde pto1){
-    return pto1.getubicacion;
-}
-public float gananciaOng(){
-    return  (this.getIngresogenerado()*2); /*las ONG le sacan un 100% a los productos , entonces sacan el doble por cada producto
-}
+    public Ubicacion getPuntoVerde(PuntoVerde pto1){
+        return pto1.getDireccion();
+    }
 
+    public float gananciaOng(){
+        return  (this.getIngresogenerado()*2); /*las ONG le sacan un 100% a los productos , entonces sacan el doble por cada producto
+    }
+
+}

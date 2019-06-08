@@ -35,5 +35,5 @@ public  abstract class Usuario {
     public void setLoged(boolean loged) {
         this.loged = loged;
     }
-    public String verRanking(Ciudad :Ciudad)/* hacer
+    // public String verRanking(Ciudad :Ciudad)  hacer
 }

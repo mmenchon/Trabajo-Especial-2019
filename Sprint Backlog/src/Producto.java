@@ -55,14 +55,14 @@ public class Producto {
         this.impacto = impacto;
     }
     public boolean equals (Producto P1){
-        if (this.getNombre().equals(P1.getNombre()){
+        if (this.getNombre().equals(P1.getNombre())) {
             return  true;
         }
         return false;
     }
     public boolean esReciclable (Municipio M1){
-        Vector<Productos >P1;
-        P1=M1.devolverProcuctos();
+        Vector<Producto >P1;
+        P1=M1.getProductos();
         for (Producto P2:P1){
             if (P2.equals(this)){
                 return true;

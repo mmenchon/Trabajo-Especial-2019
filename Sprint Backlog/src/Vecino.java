@@ -35,4 +35,10 @@ public class Vecino extends Usuario {
     	for (int i = 0; i < historial.size(); i++) {
 			punt += historial.elementAt(i).getPuntReciclaje();
 		}
+    	return punt;
+    }
+    
+    
+    
+    
 }

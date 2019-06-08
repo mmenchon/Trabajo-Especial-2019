@@ -7,10 +7,13 @@ public class Cuadra extends Zona {
 	@Override
 	public Vector<Vecino> getRanking() {
 		Vector<Vecino> v = new Vector<Vecino>();
-		ciudadanos.sort();
+		
+		v.sort(OrdenRanking);
 	}
 
-	
+	public Vector<Vecino> copia() {
+		
+	}
 	@Override
 	public Vector<Producto> getHistorial() {
 		// TODO Auto-generated method stub

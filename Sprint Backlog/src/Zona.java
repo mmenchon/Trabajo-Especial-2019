@@ -1,2 +1,4 @@
-public class Zona {
+
+public abstract class Zona {
+    
 }

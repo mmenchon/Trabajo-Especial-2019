@@ -2,7 +2,7 @@ import java.util.Vector;
 
 public class Vecino extends Usuario {
     private Vector<Producto> historial;
-
+    private float puntaje;
 
     public Vecino (String nombre ,String mail,String contrasenia,boolean loged){
         this.nombre=nombre;

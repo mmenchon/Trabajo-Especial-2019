@@ -37,8 +37,9 @@ public class Vecino extends Usuario {
 		}
     	return punt;
     }
-    
-    
-    
-    
+
+
+    public Vector<Producto> getHistorial() {
+        return historial;
+    }
 }

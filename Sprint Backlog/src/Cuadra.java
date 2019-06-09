@@ -8,16 +8,18 @@ public class Cuadra extends Zona {
 	public Vector<Vecino> getRanking() {
 		Vector<Vecino> v = new Vector<Vecino>();
 		
-		v.sort(OrdenRanking);
+		v.sort(new OrdenRanking());
+		return v;
 	}
 
-	public Vector<Vecino> copia() {
-		
-	}
+
 	@Override
 	public Vector<Producto> getHistorial() {
-		// TODO Auto-generated method stub
-		return null;
-	}
+	    Vector<Producto> res = new Vector<Producto>();
+	    for(Vecino _vecino: ciudadanos) {
+	        res.addAll(_vecino.getHistorial());
+        }
+        return  res;
+    }
 
 }

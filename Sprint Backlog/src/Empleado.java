@@ -7,10 +7,11 @@ public class Empleado extends Usuario {
 
 
     public Empleado() {
+        super();
     }
 
-    public void generarStatsRecollect(Vector<Producto> productos) {
-
+    public Vector<Producto> statRecicle(Vecino vecino) {
+        return  vecino.getHistorial();
     }
 
     public void infoRecoridoCamion(Camion _camion) {
@@ -25,10 +26,16 @@ public class Empleado extends Usuario {
         return zona.getHistorial();
     }
 
-    public void getInfo(Zona zona) {
+    public Vector<Producto> getInfo(Zona zona) {
+        Vector<Producto> res = new Vector<Producto>();
         if(fechaInforme.equals(new Date())) {
-            zona.getHistorial();
+            res.addAll(zona.getHistorial());
         }
+        return res;
+    }
+
+    public void setFechaInforme(Date fecha) {
+        this.fechaInforme = fecha;
     }
 
     public  void decidirPremio(String _premio) {

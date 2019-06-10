@@ -11,5 +11,6 @@ public class Main {
     Vecino v5 = new Vecino("Mariano","nanito", "pepo5");
     Vecino v6 = new Vecino("Leo","leito", "pepo6");
 
+    Municipio m1 = new Municipio();
 
 }

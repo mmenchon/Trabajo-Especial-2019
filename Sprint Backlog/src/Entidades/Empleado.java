@@ -1,3 +1,7 @@
+package Entidades;
+
+import ciudad.Zona;
+
 import java.util.Date;
 import java.util.Vector;
 

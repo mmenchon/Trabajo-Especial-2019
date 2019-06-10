@@ -1,3 +1,7 @@
+package Entidades;
+
+import Cardinales.Trayectoria;
+import Cardinales.Ubicacion;
 
 public class Camion {
 	

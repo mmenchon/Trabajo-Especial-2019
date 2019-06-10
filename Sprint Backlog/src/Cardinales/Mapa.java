@@ -1,3 +1,5 @@
+package Cardinales;
+
 import java.util.Vector;
 
 public class Mapa {
@@ -13,5 +15,8 @@ public class Mapa {
 	public Mapa getMapa() {
 		return this;
 	}
-	
+
+	public Vector<PuntoVerde> getPuntosVerdes() {
+	    return puntos;
+    }
 }

@@ -1,3 +1,4 @@
+package Cardinales;
 
 public class Ubicacion {
 	

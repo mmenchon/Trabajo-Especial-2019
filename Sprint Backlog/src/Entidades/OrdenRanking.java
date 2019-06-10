@@ -1,3 +1,7 @@
+package Entidades;
+
+import Entidades.Vecino;
+
 import java.util.Comparator;
 
 public class OrdenRanking implements Comparator<Vecino> {

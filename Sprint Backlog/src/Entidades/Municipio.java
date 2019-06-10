@@ -1,3 +1,5 @@
+package Entidades;
+
 import java.util.Vector;
 
 public class Municipio {

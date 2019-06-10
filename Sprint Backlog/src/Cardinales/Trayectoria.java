@@ -1,3 +1,5 @@
+package Cardinales;
+
 import java.util.Vector;
 
 public class Trayectoria {

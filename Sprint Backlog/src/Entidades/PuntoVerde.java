@@ -1,3 +1,6 @@
+package Entidades;
+
+import Cardinales.Ubicacion;
 
 public class PuntoVerde {
 

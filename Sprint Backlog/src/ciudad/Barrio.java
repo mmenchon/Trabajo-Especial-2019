@@ -1,4 +1,9 @@
+package ciudad;
+
 import java.util.Vector;
+
+import Entidades.Producto;
+import Entidades.Vecino;
 
 public class Barrio extends Zona {
 	private  Vector<Zona> v;

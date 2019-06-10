@@ -1,7 +1,6 @@
-import Entidades.Empleado;
-import Entidades.Municipio;
-import Entidades.Producto;
-import Entidades.Vecino;
+import Entidades.*;
+
+import java.util.Vector;
 
 public class Main {
 
@@ -9,29 +8,34 @@ public class Main {
         System.out.println("Hello World!");
 
 
-        Vecino v1 = new Vecino("Juan", "juani", "pepo1");
-        Vecino v2 = new Vecino("Carlos", "carlitos", "pepo2");
-        Vecino v3 = new Vecino("Pedro", "pedrito", "pepo3");
-        Vecino v4 = new Vecino("Mauri", "maurito", "pepo4");
-        Vecino v5 = new Vecino("Mariano", "nanito", "pepo5");
-        Vecino v6 = new Vecino("Leo", "leito", "pepo6");
+        Usuario v1 = new Vecino("Juan", "juani", "pepo1");
+        Usuario v2 = new Vecino("Carlos", "carlitos", "pepo2");
+        Usuario v3 = new Vecino("Pedro", "pedrito", "pepo3");
+        Usuario v4 = new Vecino("Mauri", "maurito", "pepo4");
+        Usuario v5 = new Vecino("Mariano", "nanito", "pepo5");
+        Usuario v6 = new Vecino("Leo", "leito", "pepo6");
         Municipio m1 = new Municipio();
-        Empleado e1 = new Empleado("Edison", "thomas", "foco");
-        m1.addUsuario(v1);
-        m1.addUsuario(v2);
-        m1.addUsuario(v3);
-        m1.addUsuario(v4);
-        m1.addUsuario(v5);
-        m1.addUsuario(v6);
-        m1.addUsuario(e1);
+        Usuario e1 = new Empleado("Edison", "thomas", "foco");
+        UserManager usuarios = new UserManager();
+        usuarios.signUp(v1);
+        usuarios.signUp(v2);
+        usuarios.signUp(v3);
+        usuarios.signUp(v4);
+        usuarios.signUp(v5);
+        usuarios.signUp(v6);
+        usuarios.signUp(e1);
+
         Producto p1 = new Producto("botella plastica", 10, 13, 20);
         Producto p2 = new Producto("botella vidrio", 11, 13, 18);
         Producto p3 = new Producto("caja plastica", 3, 4, 7);
         m1.addReciclables(p2);
         m1.addReciclables(p1);
         m1.addReciclables(p3);
-        
 
+        Vector<Producto> skr=m1.getProductos();
+        for (Producto p4: skr) {
+            System.out.print(p4.getNombre());
+        }
 
     }
 }

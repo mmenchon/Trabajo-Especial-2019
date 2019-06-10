@@ -1,5 +1,7 @@
 package Entidades;
 
+import ciudad.Cuadra;
+
 import java.util.Vector;
 
 public class UserManager {
@@ -30,6 +32,7 @@ public class UserManager {
 
     public void signUp(Usuario user) {
         this.users.add(user);
+        ((Cuadra) ((Vecino)user).getCuadra()).addVecino((Vecino) user);
     }
 
     public void logOut(Usuario user) {

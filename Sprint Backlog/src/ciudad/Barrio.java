@@ -8,6 +8,10 @@ import Entidades.Vecino;
 public class Barrio extends Zona {
 	private  Vector<Zona> v;
 
+	public Barrio() {
+		this.v= new Vector<Zona>();
+	}
+
 	@Override
 	public Vector<Vecino> getRanking() {
         Vector<Vecino> res = new Vector<Vecino>();
@@ -27,7 +31,7 @@ public class Barrio extends Zona {
 	}
 
 	public void addZona(Zona z) {
-	    v.add(z);
+	   this.v.add(z);
     }
 
 }

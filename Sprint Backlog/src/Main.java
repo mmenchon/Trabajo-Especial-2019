@@ -1,4 +1,7 @@
 import Entidades.*;
+import ciudad.Barrio;
+import ciudad.Cuadra;
+import ciudad.Zona;
 
 import java.util.Vector;
 
@@ -7,8 +10,10 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Hello World!");
 
-
-        Usuario v1 = new Vecino("Juan", "juani", "pepo1");
+        Zona c1= new Cuadra();
+        Zona b1 = new Barrio();
+        b1.addZona(c1);
+        Usuario v1 = new Vecino("Juan", "juani", "pepo1",);
         Usuario v2 = new Vecino("Carlos", "carlitos", "pepo2");
         Usuario v3 = new Vecino("Pedro", "pedrito", "pepo3");
         Usuario v4 = new Vecino("Mauri", "maurito", "pepo4");
@@ -31,6 +36,7 @@ public class Main {
         m1.addReciclables(p2);
         m1.addReciclables(p1);
         m1.addReciclables(p3);
+
 
         Vector<Producto> skr=m1.getProductos();
         for (Producto p4: skr) {

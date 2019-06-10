@@ -4,7 +4,7 @@ public class Vecino extends Usuario {
     private Vector<Producto> historial;
     private float puntaje;
 
-    public Vecino (String nombre ,String mail,String contrasenia,boolean loged){
+    public Vecino (String nombre ,String mail,String contrasenia){
         this.nombre=nombre;
         this.email=mail;
         this.contrasenia =contrasenia;

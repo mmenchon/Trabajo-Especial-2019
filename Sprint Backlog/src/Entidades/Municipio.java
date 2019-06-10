@@ -14,10 +14,6 @@ public class Municipio {
         reciclables.add(P1);
     }
 
-    public  void addUsuario(Usuario S1){
-
-        usuarios.add(S1);
-    }
     public Vector<Producto>getProductos() {
         Vector<Producto> productos = new Vector<Producto>();
         for (Producto item : reciclables) {
@@ -26,7 +22,4 @@ public class Municipio {
         }
         return productos;
     }
-
-
-
-    }
+}

@@ -9,9 +9,7 @@ public class Vecino extends Usuario {
     private float puntaje;
 
     public Vecino (String nombre ,String mail,String contrasenia){
-        this.nombre=nombre;
-        this.email=mail;
-        this.contrasenia =contrasenia;
+        super(nombre, mail, contrasenia);
     }
     public void recycleProduct(Producto P1, Municipio M1){
         if (P1.esReciclable(M1)){

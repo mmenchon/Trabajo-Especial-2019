@@ -10,8 +10,8 @@ public class Empleado extends Usuario {
     private Date fechaInforme;
 
 
-    public Empleado() {
-        super();
+    public Empleado(String nombre ,String mail, String contrasenia) {
+        super(nombre, mail, contrasenia);
     }
 
     public Vector<Producto> statRecicle(Vecino vecino) {

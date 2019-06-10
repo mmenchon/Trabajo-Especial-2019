@@ -1,5 +1,7 @@
 package Cardinales;
 
+import Entidades.PuntoVerde;
+
 import java.util.Vector;
 
 public class Mapa {

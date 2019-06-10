@@ -4,7 +4,13 @@ public  abstract class Usuario {
     String nombre ;
      String email;
      String contrasenia;
-     boolean loged;
+     boolean logged;
+
+     public Usuario(String nombre ,String mail, String contrasenia) {
+         this.nombre=nombre;
+         this.email=mail;
+         this.contrasenia =contrasenia;
+     }
 
     public String getNombre() {
         return nombre;
@@ -30,8 +36,8 @@ public  abstract class Usuario {
         this.contrasenia = contrasenia;
     }
 
-    public boolean isLoged() {
-        return loged;
+    public boolean isLogged() {
+        return logged;
     }
 
     public void signIn(String email, String password) {
@@ -46,8 +52,8 @@ public  abstract class Usuario {
         this.email = email;
     }
 
-    public void setLoged(boolean loged) {
-        this.loged = loged;
+    public void setLoged(boolean logged) {
+        this.logged = logged;
     }
     // public String verRanking(Ciudad :Ciudad)  hacer
 }

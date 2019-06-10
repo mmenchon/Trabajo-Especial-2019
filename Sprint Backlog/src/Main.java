@@ -27,9 +27,10 @@ public class Main {
         Producto p1 = new Producto("botella plastica", 10, 13, 20);
         Producto p2 = new Producto("botella vidrio", 11, 13, 18);
         Producto p3 = new Producto("caja plastica", 3, 4, 7);
-    
+        m1.addReciclables(p2);
         m1.addReciclables(p1);
-
+        m1.addReciclables(p3);
+        
 
 
     }

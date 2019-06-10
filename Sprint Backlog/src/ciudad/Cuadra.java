@@ -7,9 +7,12 @@ import Entidades.Vecino;
 import java.util.Vector;
 
 public class Cuadra extends Zona {
-
 	private Vector<Vecino> ciudadanos;
-	
+
+	public Cuadra(){
+		this.ciudadanos = new Vector<Vecino>();
+	}
+
 	@Override
 	public Vector<Vecino> getRanking() {
 		Vector<Vecino> v = new Vector<Vecino>();

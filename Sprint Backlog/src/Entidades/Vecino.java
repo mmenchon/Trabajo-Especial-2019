@@ -1,19 +1,22 @@
 package Entidades;
 
 import Cardinales.Ubicacion;
+import ciudad.Cuadra;
 
 import java.util.Vector;
 
 public class Vecino extends Usuario {
     private Vector<Producto> historial;
     private float puntaje;
+    private Cuadra manzana;
 
-    public Vecino (String nombre ,String mail,String contrasenia){
+    public Vecino (String nombre ,String mail,String contrasenia, Cuadra manzana){
         super(nombre, mail, contrasenia);
+        this.manzana = manzana;
     }
-    public void addProducto(Producto P1, Municipio M1){
-        if (P1.esReciclable(M1)){
-            historial.add(P1);
+    public void addProducto(Producto p1, Municipio m1){
+        if (p1.esReciclable(m1)){
+            historial.add(p1);
         }
     }
 

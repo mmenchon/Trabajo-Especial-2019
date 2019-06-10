@@ -71,10 +71,10 @@ public class Producto {
         return false;
     }
     public boolean esReciclable (Municipio M1){
-        Vector<Producto >P1;
-        P1=M1.getProductos();
-        for (Producto P2:P1){
-            if (P2.equals(this)){
+        Vector<Producto > productos;
+        productos=M1.getProductos();
+        for (Producto product:productos){
+            if (product.equals(this)){
                 return true;
             }
         }

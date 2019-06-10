@@ -21,7 +21,7 @@ public class Municipio {
     public Vector<Producto>getProductos() {
         Vector<Producto> productos = new Vector<Producto>();
         for (Producto item : reciclables) {
-            Producto product = new Producto(item.getNombre(), true, item.getGanancia(), item.getImpacto(), item.getPuntReciclaje());
+            Producto product = new Producto(item.getNombre(), item.getGanancia(), item.getImpacto(), item.getPuntReciclaje());
             productos.add(product);
         }
         return productos;

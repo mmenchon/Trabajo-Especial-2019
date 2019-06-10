@@ -10,12 +10,11 @@ public class Producto {
     private float impacto;
     private float punt_reciclaje;
 
-    public Producto(String n, boolean r, float g, float i, float pr){
-        nombre=n;
-        punt_reciclaje = pr;
-        reciclable=r;
-        ganancia=g;
-        impacto=i;
+    public Producto(String nombre, float ganancia, float impacto, float puntoReciclable){
+        nombre=nombre;
+        punt_reciclaje = puntoReciclable;
+        ganancia=ganancia;
+        impacto=impacto;
     }
     
     public void setPuntReciclaje(float pr) {

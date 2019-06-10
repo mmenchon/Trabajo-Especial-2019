@@ -51,4 +51,12 @@ public class Vecino extends Usuario {
     public Vector<Producto> getHistorial() {
         return historial;
     }
+
+    public Cuadra getManzana() {
+        return manzana;
+    }
+
+    public void setManzana(Cuadra manzana) {
+        this.manzana = manzana;
+    }
 }

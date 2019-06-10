@@ -14,19 +14,12 @@ public class Municipio {
         reciclables.add(P1);
     }
 
-    public  void addUsuario(Usuario S1){
-
-        usuarios.add(S1);
-    }
     public Vector<Producto>getProductos() {
         Vector<Producto> productos = new Vector<Producto>();
         for (Producto item : reciclables) {
-            Producto product = new Producto(item.getNombre(), item.getGanancia(), item.getImpacto(), item.getPuntReciclaje());
-            productos.add(product);
+            // Producto product = new Producto(item.getNombre(), item.getGanancia(), item.getImpacto(), item.getPuntReciclaje());
+            productos.add(item);
         }
         return productos;
     }
-
-
-
-    }
+}

@@ -11,10 +11,10 @@ public class Producto {
     private float punt_reciclaje;
 
     public Producto(String nombre, float ganancia, float impacto, float puntoReciclable){
-        nombre=nombre;
-        punt_reciclaje = puntoReciclable;
-        ganancia=ganancia;
-        impacto=impacto;
+        this.nombre=nombre;
+        this.punt_reciclaje = puntoReciclable;
+        this.ganancia=ganancia;
+        this.impacto=impacto;
     }
     
     public void setPuntReciclaje(float pr) {
@@ -26,7 +26,7 @@ public class Producto {
     }
     
     public int getCantidad() {
-        return cantidad;
+        return this.cantidad;
     }
 
     public void setCantidad(int cantidad) {
@@ -34,7 +34,7 @@ public class Producto {
     }
 
     public String getNombre() {
-        return nombre;
+        return this.nombre;
     }
 
     public void setNombre(String nombre) {
@@ -42,7 +42,7 @@ public class Producto {
     }
 
     public boolean isReciclable() {
-        return reciclable;
+        return this.reciclable;
     }
 
     public void setReciclable(boolean reciclable) {
@@ -50,7 +50,7 @@ public class Producto {
     }
 
     public float getGanancia() {
-        return ganancia;
+        return this.ganancia;
     }
 
     public void setGanancia(float ganancia) {
@@ -58,7 +58,7 @@ public class Producto {
     }
 
     public float getImpacto() {
-        return impacto;
+        return this.impacto;
     }
 
     public void setImpacto(float impacto) {

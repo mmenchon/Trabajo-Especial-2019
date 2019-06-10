@@ -11,7 +11,7 @@ public class Vecino extends Usuario {
     public Vecino (String nombre ,String mail,String contrasenia){
         super(nombre, mail, contrasenia);
     }
-    public void recycleProduct(Producto P1, Municipio M1){
+    public void addProducto(Producto P1, Municipio M1){
         if (P1.esReciclable(M1)){
             historial.add(P1);
         }

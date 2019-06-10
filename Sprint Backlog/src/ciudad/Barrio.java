@@ -26,4 +26,8 @@ public class Barrio extends Zona {
 		return res;
 	}
 
+	public void addZona(Zona z) {
+	    v.add(z);
+    }
+
 }

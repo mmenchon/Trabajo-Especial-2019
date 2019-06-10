@@ -1,3 +1,9 @@
+package ciudad;
+
+import Entidades.OrdenRanking;
+import Entidades.Producto;
+import Entidades.Vecino;
+
 import java.util.Vector;
 
 public class Cuadra extends Zona {

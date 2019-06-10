@@ -1,3 +1,8 @@
+package ciudad;
+
+import Entidades.Producto;
+import Entidades.Vecino;
+
 import java.util.Vector;
 
 public abstract class Zona {

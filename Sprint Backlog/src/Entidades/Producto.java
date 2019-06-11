@@ -80,4 +80,8 @@ public class Producto {
         }
         return false;
     }
+    
+    public double calcularPuntaje() {
+		return (getCantidad() * getPuntReciclaje());
+	}
 }

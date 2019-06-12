@@ -64,12 +64,9 @@ public class Main {
             System.out.println(product.getNombre());
         }//se imprimen los productos reciclables
 
-        if (usuarios.signIn("leito", "pepo7")) {
-            System.out.println("Loggeado");
-        } else {
-            System.out.println("No Loggeado");
-        }//check del login
+        usuarios.signIn("leito", "pepo7")
 
+        usuarios.signIn(v1.getMail(),v1.getContrasenia());
         v1.addProducto(p1, m1);
         v1.addProducto(p2, m1);
         v1.addProducto(p3, m1);
@@ -91,6 +88,8 @@ public class Main {
 //            System.out.println(v.getPuntaje());
         }
         System.out.println(v2.getPuntaje());
-
+        for (Producto prod: v1.getHistorial()){
+            System.out.println(prod.getNombre());
+        }//se imprime el historial de reciclaje de un vecino
     }
 }

@@ -16,16 +16,13 @@ public class UserManager {
         return user.isLogged();
     }
 
-    public boolean signIn(String email, String password) {
-        boolean registred = false;
+    public void signIn(String email, String password) {
         for (int i=0; i<this.users.size(); i++) {
             if (((Usuario) this.users.get(i)).email.equals(email) && ((Usuario) this.users.get(i)).contrasenia.equals(password)) {
-                registred = true;
                 this.users.get(i).setLoged(true);
                 break;
             }
         }
-        return registred;
     }
 
     public void signUp(Vecino user) {

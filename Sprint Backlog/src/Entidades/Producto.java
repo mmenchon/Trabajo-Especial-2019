@@ -1,5 +1,7 @@
 package Entidades;
 
+import java.util.Calendar;
+import java.util.Date;
 import java.util.Vector;
 
 public class Producto {
@@ -9,12 +11,15 @@ public class Producto {
     private float ganancia;
     private float impacto;
     private float punt_reciclaje;
-
+    private Date fecha_recic;
+    
     public Producto(String nombre, float ganancia, float impacto, float puntoReciclable){
         this.nombre=nombre;
         this.punt_reciclaje = puntoReciclable;
         this.ganancia=ganancia;
         this.impacto=impacto;
+        this.fecha_recic = Calendar.getInstance().getTime();
+        System.out.println(this.fecha_recic.toString());
     }
     
     public void setPuntReciclaje(float pr) {
@@ -83,5 +88,13 @@ public class Producto {
     
     public double calcularPuntaje() {
 		return (getCantidad() * getPuntReciclaje());
+	}
+
+	public Date getFecha_recic() {
+		return fecha_recic;
+	}
+
+	public void setFecha_recic(Date fecha_recic) {
+		this.fecha_recic = fecha_recic;
 	}
 }

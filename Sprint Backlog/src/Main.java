@@ -13,15 +13,15 @@ public class Main {
         Zona c1= new Cuadra();
         Zona b1 = new Barrio();
         ((Barrio) b1).addZona(c1);
-        Usuario v1 = new Vecino("Juan", "juani", "pepo1", (Cuadra) c1);
-        Usuario v2 = new Vecino("Carlos", "carlitos", "pepo2",(Cuadra)c1);
-        Usuario v3 = new Vecino("Pedro", "pedrito", "pepo3",(Cuadra) c1);
-        Usuario v4 = new Vecino("Mauri", "maurito", "pepo4",(Cuadra) c1);
-        Usuario v5 = new Vecino("Mariano", "nanito", "pepo5", (Cuadra) c1);
-        Usuario v6 = new Vecino("Leo", "leito", "pepo6", (Cuadra) c1);
+        Vecino v1 = new Vecino("Juan", "juani", "pepo1", (Cuadra) c1);
+        Vecino v2 = new Vecino("Carlos", "carlitos", "pepo2",(Cuadra)c1);
+        Vecino v3 = new Vecino("Pedro", "pedrito", "pepo3",(Cuadra) c1);
+        Vecino v4 = new Vecino("Mauri", "maurito", "pepo4",(Cuadra) c1);
+        Vecino v5 = new Vecino("Mariano", "nanito", "pepo5", (Cuadra) c1);
+        Vecino v6 = new Vecino("Leo", "leito", "pepo6", (Cuadra) c1);
 
         Municipio m1 = new Municipio();
-        Usuario e1 = new Empleado("Edison", "thomas", "foco");
+        Empleado e1 = new Empleado("Edison", "thomas", "foco");
         UserManager usuarios = new UserManager();
         usuarios.signUp(v1);
         usuarios.signUp(v2);

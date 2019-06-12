@@ -8,7 +8,6 @@ public class Municipio {
 
  public Municipio(){
      reciclables = new Vector<Producto>();
-     usuarios = new Vector<Usuario>();
  }
     public void  addReciclables (Producto P1){
         reciclables.add(P1);

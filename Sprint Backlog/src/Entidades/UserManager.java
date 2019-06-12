@@ -30,9 +30,13 @@ public class UserManager {
         return registred;
     }
 
-    public void signUp(Usuario user) {
+    public void signUp(Vecino user) {
         this.users.add(user);
-        ((Cuadra) ((Vecino)user).getCuadra()).addVecino((Vecino) user);
+        user.getManzana().addVecino(user);
+    }
+    
+    public void signUp(Empleado user) {
+        this.users.add(user);
     }
 
     public void logOut(Usuario user) {

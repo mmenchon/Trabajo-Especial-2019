@@ -16,7 +16,7 @@ public class Barrio extends Zona {
 	@Override
 	public Vector<Vecino> getRanking() {
         Vector<Vecino> res = new Vector<Vecino>();
-        for (Zona z: v) {
+        for (Zona z: this.v) {
             res.addAll(z.getRanking());
         }
 		res.sort(new OrdenRanking());
@@ -26,7 +26,7 @@ public class Barrio extends Zona {
 	@Override
 	public Vector<Producto> getHistorial() {
 		Vector<Producto> res = new Vector<Producto>();
-		for (Zona z: v) {
+		for (Zona z: this.v) {
 			res.addAll(z.getHistorial());
 		}
 		return res;

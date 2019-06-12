@@ -86,8 +86,8 @@ public class Main {
 
         System.out.println(v1.getRanking(ciudad).toString());
 
-        for(Vecino v: v1.getRanking(ciudad)) {
-            System.out.println(v.getNombre() + " - " + v.getPuntaje());
+        for(Vecino v: v1.getRanking(c2)) {
+            System.out.println(v.getNombre() + " - " + v.getPuntaje() + " - " + v.getManzana());
 //            System.out.println(v.getPuntaje());
         }
         System.out.println(v2.getPuntaje());

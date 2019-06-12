@@ -66,19 +66,19 @@ public class Main {
         Producto p3 = new Producto("caja plastica", 3, 4, 7);//se crean productos
         m1.addReciclables(p2);
         m1.addReciclables(p1);
-        m1.addReciclables(p3);//se le agregan al municipio como reciclables 
+        m1.addReciclables(p3);//se le agregan al municipio como reciclables
 
 
         Vector<Producto> productos=m1.getProductos();
         for (Producto product: productos) {
             System.out.println(product.getNombre());
-        }
+        }//se imprimen los productos reciclables
 
         if (usuarios.signIn("leito", "pepo7")) {
             System.out.println("Loggeado");
         } else {
             System.out.println("No Loggeado");
-        }
+        }//check del login
 
         for (Producto p4: skr) {
             System.out.println(p4.getNombre());

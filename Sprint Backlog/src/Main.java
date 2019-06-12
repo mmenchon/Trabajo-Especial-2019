@@ -6,24 +6,43 @@ import ciudad.Zona;
 import java.util.Vector;
 
 public class Main {
-    Zona c1;
-    Zona c2;
-    Zona c3;
-    Zona c4;
-    Zona c5;
-    Zona c6;
-    Zona c7;
-    Zona c8;
-    Zona b1;
-    Zona b2;
-    Zona Ciudad;
 
     public static void main(String[] args) {
         System.out.println("Hello World!");
 
-        Zona c1= new Cuadra();
-        Zona b1 = new Barrio();
+        Zona c1;
+        Zona c2;
+        Zona c3;
+        Zona c4;
+        Zona c5;
+        Zona c6;
+        Zona c7;
+        Zona c8;
+        Zona b1;
+        Zona b2;
+        Zona ciudad;
+        c1 = new Cuadra();
+        c2 = new Cuadra();
+        c3 = new Cuadra();
+        c4 = new Cuadra();
+        c5 = new Cuadra();
+        c6 = new Cuadra();
+        c7 = new Cuadra();
+        c8 = new Cuadra();
+        b1 = new Barrio();
         ((Barrio) b1).addZona(c1);
+        ((Barrio) b1).addZona(c2);
+        ((Barrio) b1).addZona(c3);
+        ((Barrio) b1).addZona(c4);
+        b2 = new Barrio();
+        ((Barrio) b2).addZona(c5);
+        ((Barrio) b2).addZona(c6);
+        ((Barrio) b2).addZona(c7);
+        ((Barrio) b2).addZona(c8);
+        ciudad = new Barrio();
+        ((Barrio) ciudad).addZona(b1);
+        ((Barrio) ciudad).addZona(b2);
+
         Vecino v1 = new Vecino("Juan", "juani", "pepo1", (Cuadra) c1);
         Vecino v2 = new Vecino("Carlos", "carlitos", "pepo2",(Cuadra)c1);
         Vecino v3 = new Vecino("Pedro", "pedrito", "pepo3",(Cuadra) c1);
@@ -50,9 +69,9 @@ public class Main {
         m1.addReciclables(p3);
 
 
-        Vector<Producto> skr=m1.getProductos();
-        for (Producto p4: skr) {
-            System.out.println(p4.getNombre());
+        Vector<Producto> productos=m1.getProductos();
+        for (Producto product: productos) {
+            System.out.println(product.getNombre());
         }
 
         if (usuarios.signIn("leito", "pepo7")) {
@@ -60,30 +79,9 @@ public class Main {
         } else {
             System.out.println("No Loggeado");
         }
-    }
 
-
-    public void initialize() {
-        c1 = new Cuadra();
-        c2 = new Cuadra();
-        c3 = new Cuadra();
-        c4 = new Cuadra();
-        c5 = new Cuadra();
-        c6 = new Cuadra();
-        c7 = new Cuadra();
-        c8 = new Cuadra();
-        b1 = new Barrio();
-        ((Barrio) b1).addZona(c1);
-        ((Barrio) b1).addZona(c2);
-        ((Barrio) b1).addZona(c3);
-        ((Barrio) b1).addZona(c4);
-        b2 = new Barrio();
-        ((Barrio) b2).addZona(c5);
-        ((Barrio) b2).addZona(c6);
-        ((Barrio) b2).addZona(c7);
-        ((Barrio) b2).addZona(c8);
-        Ciudad = new Barrio();
-        ((Barrio) Ciudad).addZona(b1);
-        ((Barrio) Ciudad).addZona(b2);
+        for (Producto p4: skr) {
+            System.out.println(p4.getNombre());
+        }
     }
 }

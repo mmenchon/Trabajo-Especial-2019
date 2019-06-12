@@ -16,7 +16,7 @@ public class Vecino extends Usuario {
     }
 
     public void addProducto(Producto p1, Municipio m1){
-        if (p1.esReciclable(m1)){
+        if (p1.esReciclable(m1)&& isLogged()){
             this.historial.add(p1);
         }
     }

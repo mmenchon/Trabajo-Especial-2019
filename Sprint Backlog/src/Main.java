@@ -29,7 +29,7 @@ public class Main {
         c6 = new Cuadra();
         c7 = new Cuadra();
         c8 = new Cuadra();
-        b1 = new Barrio();
+        b1 = new Barrio();//se inicializan las zonas, barrio/cuadra
         ((Barrio) b1).addZona(c1);
         ((Barrio) b1).addZona(c2);
         ((Barrio) b1).addZona(c3);
@@ -38,35 +38,35 @@ public class Main {
         ((Barrio) b2).addZona(c5);
         ((Barrio) b2).addZona(c6);
         ((Barrio) b2).addZona(c7);
-        ((Barrio) b2).addZona(c8);
+        ((Barrio) b2).addZona(c8);//se asignan cuadras a los barrios
         ciudad = new Barrio();
         ((Barrio) ciudad).addZona(b1);
-        ((Barrio) ciudad).addZona(b2);
+        ((Barrio) ciudad).addZona(b2);//se crea una ciudad y se le asignan los barrios
 
         Vecino v1 = new Vecino("Juan", "juani", "pepo1", (Cuadra) c1);
         Vecino v2 = new Vecino("Carlos", "carlitos", "pepo2",(Cuadra)c1);
         Vecino v3 = new Vecino("Pedro", "pedrito", "pepo3",(Cuadra) c1);
         Vecino v4 = new Vecino("Mauri", "maurito", "pepo4",(Cuadra) c1);
         Vecino v5 = new Vecino("Mariano", "nanito", "pepo5", (Cuadra) c1);
-        Vecino v6 = new Vecino("Leo", "leito", "pepo6", (Cuadra) c1);
+        Vecino v6 = new Vecino("Leo", "leito", "pepo6", (Cuadra) c1);//se inicializan los vecinos
 
-        Municipio m1 = new Municipio();
-        Empleado e1 = new Empleado("Edison", "thomas", "foco");
-        UserManager usuarios = new UserManager();
+        Municipio m1 = new Municipio();//se inicializa el municipio
+        Empleado e1 = new Empleado("Edison", "thomas", "foco");//se unicializa un empleado
+        UserManager usuarios = new UserManager();//se inicializa el sistem de login
         usuarios.signUp(v1);
         usuarios.signUp(v2);
         usuarios.signUp(v3);
         usuarios.signUp(v4);
         usuarios.signUp(v5);
         usuarios.signUp(v6);
-        usuarios.signUp(e1);
+        usuarios.signUp(e1);//se asignan los login
 
         Producto p1 = new Producto("botella plastica", 10, 13, 20);
         Producto p2 = new Producto("botella vidrio", 11, 13, 18);
-        Producto p3 = new Producto("caja plastica", 3, 4, 7);
+        Producto p3 = new Producto("caja plastica", 3, 4, 7);//se crean productos
         m1.addReciclables(p2);
         m1.addReciclables(p1);
-        m1.addReciclables(p3);
+        m1.addReciclables(p3);//se le agregan al municipio como reciclables 
 
 
         Vector<Producto> productos=m1.getProductos();

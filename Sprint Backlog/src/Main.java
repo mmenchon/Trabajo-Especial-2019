@@ -64,9 +64,23 @@ public class Main {
             System.out.println(product.getNombre());
         }//se imprimen los productos reciclables
 
-        usuarios.signIn("leito", "pepo7")
+        usuarios.signIn("leito", "pepo7");
+        if(v6.isLogged())
+            System.out.println("logeado");
+        else
+            System.out.println("no logeado");
 
         usuarios.signIn(v1.getMail(),v1.getContrasenia());
+        if(v1.isLogged())
+            System.out.println("logeado");
+        else
+            System.out.println("no logeado");
+        usuarios.signIn(v2.getMail(),v2.getContrasenia());
+        usuarios.signIn(v3.getMail(),v3.getContrasenia());
+        usuarios.signIn(v4.getMail(),v4.getContrasenia());
+        usuarios.signIn(v5.getMail(),v5.getContrasenia());
+        usuarios.signIn(v6.getMail(),v6.getContrasenia());//logeos
+
         v1.addProducto(p1, m1);
         v1.addProducto(p2, m1);
         v1.addProducto(p3, m1);

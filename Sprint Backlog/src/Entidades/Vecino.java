@@ -15,13 +15,13 @@ public class Vecino extends Usuario {
     }
     public void addProducto(Producto p1, Municipio m1){
         if (p1.esReciclable(m1)){
-            historial.add(p1);
+            this.historial.add(p1);
         }
     }
 
     public float getIngresogenerado(){
         float ingres=0;
-        for (Producto it:historial){
+        for (Producto it: this.historial){
             ingres+=it.getGanancia();
         }
         return ingres;
@@ -36,19 +36,19 @@ public class Vecino extends Usuario {
     
     public float getPuntaje() {
     	float punt =0;
-    	for (int i = 0; i < historial.size(); i++) {
-			punt += historial.elementAt(i).getPuntReciclaje();
+    	for (int i = 0; i < this.historial.size(); i++) {
+			punt += this.historial.elementAt(i).getPuntReciclaje();
 		}
     	return punt;
     }
 
 
     public Vector<Producto> getHistorial() {
-        return historial;
+        return this.historial;
     }
 
     public Cuadra getManzana() {
-        return manzana;
+        return this.manzana;
     }
 
     public void setManzana(Cuadra manzana) {

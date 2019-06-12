@@ -4,8 +4,6 @@ import java.util.Vector;
 
 public class Municipio {
  private Vector<Producto> reciclables;
- private Vector<Usuario> usuarios;
-
  public Municipio(){
      reciclables = new Vector<Producto>();
  }

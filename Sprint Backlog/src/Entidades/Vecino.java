@@ -12,7 +12,9 @@ public class Vecino extends Usuario {
     public Vecino (String nombre ,String mail,String contrasenia, Cuadra manzana){
         super(nombre, mail, contrasenia);
         this.manzana = manzana;
+        this.historial = new Vector<Producto>();
     }
+
     public void addProducto(Producto p1, Municipio m1){
         if (p1.esReciclable(m1)){
             this.historial.add(p1);

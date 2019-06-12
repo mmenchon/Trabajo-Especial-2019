@@ -9,16 +9,18 @@ import java.util.Vector;
 public class Cuadra extends Zona {
 	private Vector<Vecino> ciudadanos;
 
-	public Cuadra(){
+	public Cuadra() {
 		this.ciudadanos = new Vector<Vecino>();
 	}
-	public void addVecino(Vecino v1){
+
+	public void addVecino(Vecino v1) {
 		ciudadanos.add(v1);
 	}
+
 	@Override
 	public Vector<Vecino> getRanking() {
 		Vector<Vecino> v = new Vector<Vecino>();
-		
+		v.addAll(ciudadanos);
 		v.sort(new OrdenRanking());
 		return v;
 	}

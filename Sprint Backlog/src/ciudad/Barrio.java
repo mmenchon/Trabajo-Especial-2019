@@ -2,6 +2,7 @@ package ciudad;
 
 import java.util.Vector;
 
+import Entidades.OrdenRanking;
 import Entidades.Producto;
 import Entidades.Vecino;
 
@@ -18,6 +19,7 @@ public class Barrio extends Zona {
         for (Zona z: v) {
             res.addAll(z.getRanking());
         }
+		res.sort(new OrdenRanking());
         return res;
 	}
 

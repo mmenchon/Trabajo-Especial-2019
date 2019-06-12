@@ -19,7 +19,6 @@ public class Producto {
         this.ganancia=ganancia;
         this.impacto=impacto;
         this.fecha_recic = Calendar.getInstance().getTime();
-        System.out.println(this.fecha_recic.toString());
     }
     
     public void setPuntReciclaje(float pr) {

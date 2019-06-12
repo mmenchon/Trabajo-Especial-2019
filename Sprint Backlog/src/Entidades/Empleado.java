@@ -46,7 +46,4 @@ public class Empleado extends Usuario {
         this.premio = _premio;
     }
 
-    public Vector<Vecino> getRanking(Zona zona) {
-        return  zona.getRanking();
-    }
 }

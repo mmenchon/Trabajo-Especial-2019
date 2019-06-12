@@ -1,5 +1,9 @@
 package Entidades;
 
+import ciudad.Zona;
+
+import java.util.Vector;
+
 public  abstract class Usuario {
     String nombre ;
      String email;
@@ -45,4 +49,7 @@ public  abstract class Usuario {
         this.logged = logged;
     }
     // public String verRanking(Ciudad :Ciudad)  hacer
+    public Vector<Vecino> getRanking(Zona zona) {
+        return  zona.getRanking();
+    }
 }

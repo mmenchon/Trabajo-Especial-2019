@@ -19,10 +19,6 @@ public class Vecino extends Usuario {
         }
     }
 
-    public Cuadra getCuadra() {
-        return manzana;
-    }
-
     public float getIngresogenerado(){
         float ingres=0;
         for (Producto it:historial){

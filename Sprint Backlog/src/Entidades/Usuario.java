@@ -36,13 +36,13 @@ public  abstract class Usuario {
         this.contrasenia = contrasenia;
     }
 
-    public boolean isLogged() {
-        return logged;
-    }
-
-
-    public void setLoged(boolean logged) {
-        this.logged = logged;
-    }
+//    public boolean isLogged() {
+//        return logged;
+//    }
+//
+//
+//    public void setLoged(boolean logged) {
+//        this.logged = logged;
+//    }
     // public String verRanking(Ciudad :Ciudad)  hacer
 }

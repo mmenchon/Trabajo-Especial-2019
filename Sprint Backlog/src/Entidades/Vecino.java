@@ -46,7 +46,10 @@ public class Vecino extends Usuario {
 
 
     public Vector<Producto> getHistorial() {
-        return this.historial;
+        if (isLogged()) {
+            return this.historial;
+        }
+        return null;
     }
 
     public Cuadra getManzana() {

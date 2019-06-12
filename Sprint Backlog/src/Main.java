@@ -64,7 +64,7 @@ public class Main {
             System.out.println(product.getNombre());
         }//se imprimen los productos reciclables
 
-        usuarios.signIn("leito", "pepo7");
+        usuarios.signIn("leito", "pepo7");// vecino v6
         if(v6.isLogged())
             System.out.println("logeado");
         else
@@ -79,7 +79,7 @@ public class Main {
         usuarios.signIn(v3.getMail(),v3.getContrasenia());
         usuarios.signIn(v4.getMail(),v4.getContrasenia());
         usuarios.signIn(v5.getMail(),v5.getContrasenia());
-        usuarios.signIn(v6.getMail(),v6.getContrasenia());//logeos
+        usuarios.signIn(v6.getMail(),v6.getContrasenia());//loggeos
 
         v1.addProducto(p1, m1);
         v1.addProducto(p2, m1);
@@ -91,19 +91,38 @@ public class Main {
         v4.addProducto(p3, m1);
         v5.addProducto(p1, m1);
         v6.addProducto(p2, m1);
-        v6.addProducto(p3, m1);
+        v6.addProducto(p3, m1); // agregado de Productos
 
-        System.out.println(v1.getPuntaje());
+//        System.out.println(v1.getPuntaje());
 
-        System.out.println(v1.getRanking(ciudad).toString());
+//        System.out.println(v1.getRanking(ciudad).toString());
+        System.out.println("Inicio de Ranking");
 
-        for(Vecino v: v1.getRanking(c2)) {
+        int i = 1;
+        for(Vecino v: v1.getRanking(ciudad)) { // Ver Ranking por ciudad, barrio (b1), cuadra
+            System.out.print(i + ") ");
             System.out.println(v.getNombre() + " - " + v.getPuntaje() + " - " + v.getManzana());
+            i++;
 //            System.out.println(v.getPuntaje());
         }
-        System.out.println(v2.getPuntaje());
+        System.out.println("Fin de Ranking");
+
+        System.out.println("Historial de Produtos de " + v1.getNombre());
         for (Producto prod: v1.getHistorial()){
             System.out.println(prod.getNombre());
         }//se imprime el historial de reciclaje de un vecino
+
+        usuarios.logOut(v1);
+        usuarios.logOut(v2);
+        usuarios.logOut(v3);
+        usuarios.logOut(v4);
+        usuarios.logOut(v5);
+        usuarios.logOut(v6);
+        if(v1.getHistorial() != null) {
+            System.out.println("Entro");
+            for (Producto prod: v1.getHistorial()) {
+                System.out.println(prod.getNombre());
+            }//se imprime el historial de reciclaje de un vecino desloggeado
+        }
     }
 }
